@@ -34,7 +34,8 @@ A comprehensive firewall system with CLI and GUI interfaces that can block traff
 
 &nbsp;  ```bash
 
-&nbsp;  git clone https://github.com/yourusername/vm-firewall.git
+&nbsp;  git clone [https://github.com/yourusername/vm-firewall.git](https://github.com/Hck3eer/Firewall.git)
 
 &nbsp;  cd vm-firewall
+
 
