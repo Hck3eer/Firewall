@@ -1,0 +1,27 @@
+# Firewall Configuration
+firewall:
+  chain_name: "VM_FIREWALL"
+  log_file: "/var/log/vm_firewall.log"
+  rules_file: "firewall_rules.json"
+  backup_dir: "/etc/firewall/backups"
+  
+# Network Settings
+network:
+  vm_network_range: "192.168.1.0/24"  # Adjust for your network
+  interface: "eth0"                   # Primary interface
+  block_all_vms: true                 # Block across all VMs
+  broadcast_block: true              # Block broadcast traffic
+  
+# Blocking Settings
+blocking:
+  drop_action: "DROP"
+  reject_action: "REJECT"
+  log_blocked: true
+  rate_limit: "60/minute"
+  
+# Security
+security:
+  allow_localhost: true
+  allow_dns: true
+  protect_ssh: true
+  ssh_port: 22
